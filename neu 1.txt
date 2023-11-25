@@ -1,0 +1,33 @@
+const text = 'Guten Tag'; // const = unveränderliche Variable
+text = 'Chiao'; // TypeError weil const(ante) nicht verändert werden kann
+
+let person = 'John'; // let = veränderbare Variable
+person = 'Joe'; // ok
+
+
+const message = "Hello World";
+
+if(true) {
+    const message = "Bye"; // SyntaxError (const nicht änderbar)
+}
+
+
+let city = "Berlin";
+if(true) {
+    let city = "New York"; // ok
+}
+
+
+const beer = "Bier";
+const wine = "Wein";
+const drinks = beer + ", " + wine; // Bier, Wein
+
+
+const dude = "Max";
+const greeting = `Hi ${dude}`; // ? const "name" funktioniert nicht
+
+
+console.log("Hello World"); // Hello World
+
+const car = "Audi";
+console.log("Auto: ", car); // Auto: Audi
