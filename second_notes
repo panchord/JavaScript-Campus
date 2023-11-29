@@ -1,0 +1,87 @@
+const zahl = 3; // Integer
+const komma = 2.1478; // Float
+const not = NaN; // Not-A-Number
+const inf = Infinity; // Unendlich
+
+console.log(zahl, komma, not, inf)
+
+
+const sum = 1 + 2;
+const sub = 77 - 7;
+
+console.log(sum * sub); //3 * 70 = 210
+
+
+const digit = 3.14159265359;
+console.log(digit.toFixed(4)); // 3,1415
+console.log(isNaN(digit)); //false -> prüft ob digit = not a number
+digit.toString() // String-Transformation
+
+
+// Aufgabe 1
+let addition = 3 + 5;
+let subtraktion = 28 - 12;
+let produkt = addition * subtraktion
+let division = produkt / 4;
+
+// Aufgabe 2
+let float = 12.54321
+let rund = float.toFixed(3)
+
+// Aufgabe 3
+let text = "code"
+let test = isNaN(text)
+
+
+function functionName() {               // häufiger
+    //Codeblock
+}
+
+let functionName = function() {
+    //Codeblock
+}
+
+functionName();
+
+functionName(parameter1, parameter2);
+
+
+function addNumbers(x, y) {
+    return x + y;
+}
+
+let result = addNumbers(2, 3);          // 5
+
+
+function sayHello(name) {
+    console.log("Hello, " + name + "!")
+}
+
+sayHello("John")                // Hello, John!
+
+
+// Anonyme Funktion:
+let add = function(x, y) {
+    return x + y;
+}
+
+let ergebnis = add(2, 3); // ergebnis = 5
+
+
+// Arrowfunktion
+let addieren = (x,y) => x + y;
+
+let drittesResultImVideoBlock = add(2, 3); // drittesResultImVideoBlock = 5
+
+
+// Callbackfunktion
+function sagHallo(name, callback) {
+    console.log("Hello, " + name + "!");
+    callback();                         // Als Parameter wird eine Funktion aufgerufen
+}
+
+function sayGoodbye() {
+    console.log("Goolbye!");
+}
+
+sayHello("John", sayGoodbye); // Hello, John! Goodbye!
